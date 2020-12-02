@@ -1,0 +1,9 @@
+# Name,   Type, SubType, Offset,  Size, Flags
+# Note: if you have increased the bootloader size, make sure to update the offsets to avoid overlap
+# 4194304 - 24576(0x6000) - 4096(0x1000) - 8192(0x2000)  = 4'157'440 / 3 = 1350000(0x149970) 1336000(0x1462C0) 1310720(0x140000)
+nvs,      data, nvs,     ,        0x6000,
+phy_init, data, phy,     ,        0x1000,
+otadata,  data, ota,     ,        0x2000,
+factory,  app,  factory, ,        0x140000,
+ota_0,    app,  ota_0,   ,        0x140000,
+ota_1,    app,  ota_1,   ,        0x140000,
