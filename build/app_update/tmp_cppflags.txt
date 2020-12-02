@@ -1,1 +1,0 @@
-1 esp32-bluetooth-speaker v4.2-dev-1415-ga2263571b-dirty
